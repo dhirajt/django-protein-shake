@@ -1,0 +1,38 @@
+models
+======
+
+- Rethink all your models before making your tables. Think about the constraints
+  that your fields are going to have.
+- Uniqueness and constraints should be enforced by the database not by logic in
+  your code.
+
+
+
+
+views
+=====
+
+
+
+
+
+
+
+
+
+
+urls
+====
+
+
+
+
+
+
+
+
+pitfalls
+========
+
+- get_or_create can create multiple entries in your database if you don't 
+  have unique constraints in the database.
