@@ -5,6 +5,8 @@ models
   that your fields are going to have.
 - Uniqueness and constraints should be enforced by the database not by logic in
   your code.
+- Pay attention to fields in Meta class when creating a model because django uses
+  these in various places to do some serious stuff.
 
 
 
