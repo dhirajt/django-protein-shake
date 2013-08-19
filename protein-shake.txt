@@ -33,6 +33,26 @@ urls
 
 
 
+
+
+
+must-use-apps
+=============
+
+- Absolutely use 'south'. It's the best solution for db migrations right now
+  till something like this gets into django.
+  
+- Use 'django-debug-toolbar' for debugging django in development.
+
+
+
+
+
+
+
+
+
+
 pitfalls
 ========
 
