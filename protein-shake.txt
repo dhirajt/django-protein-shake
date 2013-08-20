@@ -39,6 +39,9 @@ urls
 must-use-apps
 =============
 
+- Use virtualenv and virtualenvwrapper to create separate virtual environments for
+  your projects.
+
 - Absolutely use 'south'. It's the best solution for db migrations right now
   till something like this gets into django.
   
