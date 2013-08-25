@@ -43,7 +43,8 @@ must-use-apps
   your projects.
 
 - Absolutely use 'south'. It's the best solution for db migrations right now
-  till something like this gets into django.
+  till something like this gets into django. ( Migrations are going into django
+  core 1.7dev )
   
 - Use 'django-debug-toolbar' for debugging django in development.
 
@@ -61,3 +62,11 @@ pitfalls
 
 - get_or_create can create multiple entries in your database if you don't 
   have unique constraints in the database.
+  
+  
+Database specific problems/solutions
+====================================
+
+- MySQL has default isolation level set to READ REPEATABLE. Understand what
+  it does and change it to READ COMMITED if you get into problems.
+  * get_or_create() creates problems with READ REPEATABLE!
