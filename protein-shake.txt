@@ -48,6 +48,9 @@ must-use-apps
   
 - Use 'django-debug-toolbar' for debugging django in development.
 
+- Use redis. It's a fantastic tool use it for storing sessions and cache.
+  but don't use large items as key/value or it'll consume more memory. 
+
 
 
 
