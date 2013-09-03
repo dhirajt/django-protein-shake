@@ -65,6 +65,8 @@ pitfalls
 
 - get_or_create can create multiple entries in your database if you don't 
   have unique constraints in the database.
+- be careful when using unique_together on fields that have null values,
+  in sql null!=null i.e. nulls are unique!
   
   
 Database specific problems/solutions
@@ -73,3 +75,5 @@ Database specific problems/solutions
 - MySQL has default isolation level set to READ REPEATABLE. Understand what
   it does and change it to READ COMMITED if you get into problems.
   * get_or_create() creates problems with READ REPEATABLE!
+- Be careful when using unique constraints on fields that have null values,
+  in sql null!=null i.e. nulls are unique!
