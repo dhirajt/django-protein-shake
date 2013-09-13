@@ -67,6 +67,7 @@ pitfalls
   have unique constraints in the database.
 - be careful when using unique_together on fields that have null values,
   in sql null!=null i.e. nulls are unique!
+- Always close opened files, they hog memory when left opened.
   
   
 Database specific problems/solutions
