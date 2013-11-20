@@ -73,6 +73,8 @@ pitfalls
 Database specific problems/solutions
 ====================================
 
+- Use postgresql if you have the option to choose the database.
+
 - MySQL has default isolation level set to READ REPEATABLE. Understand what
   it does and change it to READ COMMITED if you get into problems.
   * get_or_create() creates problems with READ REPEATABLE!
