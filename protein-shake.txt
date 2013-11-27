@@ -26,6 +26,8 @@ views
 urls
 ====
 
+- Always name your urls. It makes working with urls a breeze and 
+  you don't have to hardcode the urls.
 
 
 
