@@ -83,3 +83,5 @@ Database specific problems/solutions
   * get_or_create() creates problems with READ REPEATABLE!
 - Be careful when using unique constraints on fields that have null values,
   in sql null!=null i.e. nulls are unique!
+
+- Handle database errors gracefully. (Deadlocks due to row level locking etc.)
