@@ -54,6 +54,8 @@ must-use-apps
 - Use redis. It's a fantastic tool use it for storing sessions and cache.
   but don't use large items as key/value or it'll consume more memory. 
 
+- Use pyflakes and pylint to check error before even running the program.
+
 
 
 
